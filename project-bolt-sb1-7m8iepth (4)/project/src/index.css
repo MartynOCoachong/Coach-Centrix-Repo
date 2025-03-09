@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-black text-white;
+  }
+}
+
+.gradient-overlay {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%);
+}
+
+.btn-primary {
+  @apply bg-[#AAFF00] text-black font-semibold py-4 px-6 rounded-xl w-full hover:bg-[#99EE00] transition-colors;
+}
+
+.card {
+  @apply bg-zinc-900 rounded-2xl p-4 relative overflow-hidden;
+}
+
+.text-outline {
+  -webkit-text-stroke: 1px white;
+  -webkit-text-fill-color: transparent;
+}
